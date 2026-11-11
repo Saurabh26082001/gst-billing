@@ -1,0 +1,5 @@
+{
+  "freegstbill_starBanner": "{\"firstSeen\":1794423098514}",
+  "gst_dashboardColumns": "{\"date\":true,\"invoice\":true,\"type\":true,\"client\":true,\"amount\":true,\"status\":true,\"actions\":true,\"printed\":false,\"currency\":false,\"dueDate\":false}",
+  "freegstbill_theme": "light"
+}

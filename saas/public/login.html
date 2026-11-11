@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Log in · {{BRAND}}</title>
+  <link rel="stylesheet" href="/__saas/static/app.css" />
+  <script src="/__saas/static/auth.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="brand">{{BRAND}}</div>
+    <h1>Log in</h1>
+    <p class="sub">Welcome back. Your invoices are waiting.</p>
+    <form data-auth="login" novalidate>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required autofocus />
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required />
+      <button type="submit">Log in</button>
+      <div class="msg err" role="alert"></div>
+    </form>
+    <p class="alt">New here? <a href="/signup">Start your free month</a></p>
+  </main>
+</body>
+</html>

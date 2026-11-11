@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign up · {{BRAND}}</title>
+  <link rel="stylesheet" href="/__saas/static/app.css" />
+  <script src="/__saas/static/auth.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="brand">{{BRAND}}</div>
+    <h1>Create your account</h1>
+    <p class="sub">GST invoices, returns, inventory and reports for your business.</p>
+    <div class="price"><strong>First month free</strong><span>then ₹99/month</span></div>
+    <p class="sub" style="font-size:13px;margin-top:6px">No card needed to start. Cancel any time.</p>
+    <form data-auth="signup" novalidate>
+      <label for="name">Your name</label>
+      <input id="name" name="name" autocomplete="name" required autofocus />
+      <label for="business">Business name <span class="opt">(optional)</span></label>
+      <input id="business" name="business" autocomplete="organization" />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required />
+      <label for="phone">Mobile <span class="opt">(optional, for payment receipts)</span></label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" />
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required />
+      <button type="submit">Start free month</button>
+      <div class="msg err" role="alert"></div>
+    </form>
+    <p class="alt">Already have an account? <a href="/login">Log in</a></p>
+  </main>
+</body>
+</html>

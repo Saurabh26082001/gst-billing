@@ -1,0 +1,14 @@
+{
+  "name": "gst-billing-saas-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hosted, paid front door for the GST billing app: accounts, login/logout, free trial, Razorpay subscription, one isolated billing server per business.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning gateway.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/"
+  }
+}

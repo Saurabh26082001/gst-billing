@@ -1,0 +1,45 @@
+#saas-account {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483000;
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+#saas-account .saas-toggle {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 18px;
+  background: #1e40af;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, .25);
+}
+#saas-account.saas-trial .saas-toggle { background: #15803d; }
+#saas-account .saas-menu {
+  position: absolute;
+  right: 0;
+  bottom: 44px;
+  min-width: 220px;
+  padding: 8px;
+  border-radius: 10px;
+  background: #fff;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, .18);
+}
+#saas-account .saas-menu[hidden] { display: none; }
+#saas-account .saas-who { padding: 6px 10px 0; font-weight: 600; }
+#saas-account .saas-plan { padding: 0 10px 8px; color: #64748b; border-bottom: 1px solid #e2e8f0; margin-bottom: 4px; }
+#saas-account .saas-menu a { display: block; padding: 8px 10px; border-radius: 6px; color: inherit; text-decoration: none; }
+#saas-account .saas-menu a:hover { background: #f1f5f9; }
+#saas-account .saas-logout { color: #b91c1c !important; }
+@media (prefers-color-scheme: dark) {
+  #saas-account .saas-menu { background: #131a2e; color: #e5e9f2; border-color: #26304a; }
+  #saas-account .saas-plan { color: #94a3b8; border-color: #26304a; }
+  #saas-account .saas-menu a:hover { background: #1c2540; }
+}
+@media print { #saas-account { display: none !important; } }

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plan &amp; billing · {{BRAND}}</title>
+  <link rel="stylesheet" href="/__saas/static/app.css" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+  <script src="/__saas/static/billing.js" defer></script>
+</head>
+<body>
+  <main class="card wide">
+    <div class="brand">{{BRAND}}</div>
+    <h1>Plan &amp; billing</h1>
+    <p class="sub">₹99/month after your free first month.</p>
+    <div id="status" class="status">Loading…</div>
+    <dl id="details"></dl>
+    <button id="subscribe" hidden>Subscribe for ₹99/month</button>
+    <button id="cancel" class="secondary" hidden>Cancel subscription</button>
+    <div id="msg" class="msg" role="alert"></div>
+    <div class="row">
+      <a id="open-app" class="button" href="/">Open billing app</a>
+      <a class="button secondary" href="/logout">Log out</a>
+    </div>
+    <p class="fine">Payments are handled securely by Razorpay (UPI, cards, net banking).</p>
+  </main>
+</body>
+</html>
